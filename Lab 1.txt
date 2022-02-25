@@ -1,0 +1,102 @@
+NAME: AIMAN IFTIKHAR
+REG #: FA19-BCS-002
+SECTION: 6A
+MAD LAB TASK
+
+
+Q1 
+
+Let args=[2,3,6,1,7];
+let m=0;
+  let x =parseInt(args[0]);
+  let y =parseInt(args[1]);
+  for(let i=0; i<y; i++)
+  {
+   m=args[1];
+  }
+  console.log((y+1), "th digit from last is ="+m);
+
+
+Q2
+
+var value = 23617,
+    sum = value
+        .toString()
+        .split('')
+        .map(Number)
+        .reduce(function (a, b) {
+            return a + b;
+        }, 0);
+
+console.log(sum);
+
+
+Q3
+let numStr = [2,3,6,1,7];
+
+
+  let sum = 0;
+  for (let i = 0; i < numStr.length; i++) {
+    if (numStr[i] % 2 === 0){ 
+    sum = sum + numStr[i];
+    }
+  }
+ 
+ console.log(sum);
+
+Q4
+Var i ;  
+for(i=0;i<=10;i++)
+{
+    console.log("square"+(i*i));
+    console.log("cube"+(i*i*i));
+}
+
+Q5
+
+function vowel(str)
+{
+    var x=str.split(",")
+    console.log(x[0])
+}
+vowel("a,e,i,o,u")
+
+function reverse_a_number(n)
+{
+	n = n + "";
+	return n.split("").reverse().join("");
+}
+console.log(Number(reverse_a_number(34587)));
+
+Q6
+
+Get a random integer from 1 to 10 inclusive
+const num = Math.ceil(Math.random() * 10);
+ 
+ let gnum=5;
+ if (gnum == num)
+   console.log('Matched');
+  else
+   console.log('Not matched, the number was '+gnum);
+Q7
+
+function first_last(nums)
+{
+
+
+  var end_pos = nums.length - 1;
+  if(nums.length>=2){
+  return nums[0] == 10 || nums[end_pos] == 10;
+  }
+}
+console.log(first_last([10]));
+console.log(first_last([1, 3, 5, 10]));
+console.log(first_last([2, 4, 6]));
+
+Q8
+
+function alphabet_order(str)
+  {
+return str.split('').sort().join('');
+  }
+console.log(alphabet_order("comsats"));
